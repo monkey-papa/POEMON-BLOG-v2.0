@@ -2,6 +2,8 @@
 
 一个基于 Vue 3 + Django 的个人博客系统。
 
+在线访问地址：http://www.blog.zjh2002.icu
+
 前情回顾：
 
 - 1.0 版本：http://www.blog.zjh2002.icu/article?id=20
