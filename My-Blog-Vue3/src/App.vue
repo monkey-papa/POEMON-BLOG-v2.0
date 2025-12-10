@@ -403,8 +403,8 @@ const handleBeforeUnload = () => {
   }
 
   .loading {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(55deg, var(--blue1) 20%, var(--green6) 100%);
     position: fixed; // 改为 fixed，确保覆盖整个视口
     top: 0px;

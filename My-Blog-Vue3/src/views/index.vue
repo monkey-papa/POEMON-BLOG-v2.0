@@ -691,13 +691,13 @@ const scrollTo = () => {
 
         .recent-posts {
           width: 100%;
-        }
 
-        .aside-content {
-          width: 100%;
-          max-width: unset;
-          float: unset;
-          margin: 40px auto 0;
+          .aside-content {
+            width: 100%;
+            max-width: unset;
+            float: unset;
+            margin: 40px auto 0;
+          }
         }
       }
     }

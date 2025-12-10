@@ -224,13 +224,13 @@ const getCollect = async () => {
         color: var(--bigRed);
         font-size: 28px;
         margin-bottom: 10px;
+        padding-left: 10px;
       }
 
       .tools-item-wrap {
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        margin-left: -10px;
 
         .tools-item {
           color: var(--bigRed1);
