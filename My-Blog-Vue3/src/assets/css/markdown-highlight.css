@@ -1,0 +1,367 @@
+.entry-content {
+  position: relative;
+}
+
+.entry-content blockquote {
+  margin: 0;
+  padding: 15px 50px;
+  position: relative;
+  word-break: break-word;
+  text-align: center;
+}
+
+.entry-content blockquote:before {
+  content: "\f10d";
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--orange);
+  font-family: FontAwesome;
+}
+
+.entry-content blockquote:after {
+  content: "\f10e";
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--orange);
+  font-family: FontAwesome;
+}
+
+.entry-content code:not(.hljs) {
+  background: var(--yellow2);
+  color: var(--red);
+  word-break: break-word;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+.entry-content ul {
+  list-style: disc;
+  padding: 0 10px 0 35px;
+  color: var(--fontColor);
+  border-radius: 10px;
+}
+
+.entry-content ol {
+  list-style: decimal;
+  padding: 0 10px 0 35px;
+  color: var(--fontColor);
+  border-radius: 10px;
+}
+
+.entry-content ol li,
+.entry-content ul li {
+  padding: 8px 0;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: var(--bigRed);
+}
+
+.entry-content h3 {
+  padding-bottom: 8px;
+  border-bottom: 3px dashed var(--blue2);
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4 {
+  color: var(--bigRed1);
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.entry-content h2 {
+  padding-left: 40px;
+}
+
+.entry-content h3 {
+  padding-left: 20px;
+  font-size: 22px;
+}
+
+.entry-content h4 {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.entry-content h5 {
+  font-size: 18px;
+  padding-left: 28px;
+}
+
+.entry-content h2:before {
+  content: "🍁";
+  position: absolute;
+  left: 0;
+  font-size: 1.03em;
+  margin-top: -2px;
+}
+
+.entry-content h3:before {
+  content: "🐌";
+  left: -10px;
+  position: absolute;
+  margin-top: 2px;
+  color: var(--red);
+}
+
+.entry-content h4:before {
+  content: "🦔";
+  left: -8px;
+  position: absolute;
+  color: var(--red);
+}
+
+.entry-content h5:before {
+  content: "🐤";
+  left: 0;
+  position: absolute;
+}
+
+.entry-content a {
+  color: var(--darkBlue);
+  position: relative;
+  text-decoration: none;
+}
+
+.entry-content a:hover {
+  color: var(--orange);
+}
+
+.entry-content p {
+  color: var(--fontColor);
+  line-height: 35px;
+  word-break: break-word;
+  font-size: 18px;
+}
+
+.entry-content hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0.5px dashed var(--red);
+}
+
+.entry-content img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* 高亮代码块 */
+.highlight-wrap {
+  position: relative;
+  background: var(--borderColor);
+  border-radius: 5px;
+  font: 15px/22px "Microsoft YaHei", "Arial";
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  width: 100%;
+  padding-top: 30px;
+  box-shadow: 0 10px 30px 0 var(--mask);
+}
+
+.highlight-wrap:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: var(--red4);
+  width: 12px;
+  height: 12px;
+  left: 12px;
+  margin-top: -18px;
+  box-shadow: 20px 0 var(--yellow7), 40px 0 var(--green5);
+  z-index: 2;
+}
+
+.highlight-wrap .copy-code {
+  color: var(--white);
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.highlight-wrap .copy-code:hover {
+  color: var(--maxMaxWhiteMask);
+}
+
+.highlight-wrap code::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.highlight-wrap code {
+  word-break: break-word;
+  border-radius: 0 0 5px 5px;
+}
+
+.highlight-wrap code[data-rel]:before {
+  color: var(--white);
+  content: attr(data-rel);
+  height: 30px;
+  line-height: 23px;
+  background: var(--borderColor);
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  margin-top: -30px;
+  width: 100%;
+  font-family: Ubuntu;
+  font-weight: 700;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hljs {
+  color: var(--fontColor);
+  background: var(--favoriteBg);
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.hljs-ln-line span::selection,
+.hljs-ln-line::selection {
+  background: var(--white);
+  color: var(--black19);
+}
+
+.hljs-ln {
+  margin: 6px 0 0;
+  width: 100%;
+}
+
+.hljs-ln-line.hljs-ln-code {
+  padding-left: 25px;
+  padding-right: 10px;
+}
+
+.hljs-ln-line.hljs-ln-code:hover {
+  background-color: var(--toolbarBackground1);
+}
+
+.hljs-ln-line.hljs-ln-numbers {
+  user-select: none;
+  text-align: center;
+  color: var(--gray15);
+  position: absolute;
+  left: 0;
+  width: 30px;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: var(--gray15);
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-formula,
+.hljs-keyword {
+  color: var(--purple1);
+}
+
+.hljs-deletion,
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-subst {
+  color: var(--maxLightRed);
+}
+
+.hljs-literal {
+  color: var(--green2);
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string,
+.hljs-regexp,
+.hljs-string {
+  color: var(--blue5);
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: var(--yellow4);
+}
+
+.hljs-attr,
+.hljs-number,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color: var(--yellow5);
+}
+
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-symbol,
+.hljs-title {
+  color: var(--fontColor);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 700;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+.hljs-tag,
+.hljs-ln-code {
+  color: var(--fontColor);
+}
+/* 表格 */
+.table-wrapper::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.table-wrapper > table {
+  border-collapse: collapse;
+}
+
+.table-wrapper > table th {
+  background-color: var(--miniMask);
+}
+
+.table-wrapper > table tr:nth-child(2n) {
+  background-color: var(--favoriteBg);
+}
+
+.table-wrapper > table td,
+.table-wrapper > table th {
+  padding: 8px 16px;
+  border: 1px solid var(--favoriteBg);
+  line-height: 1.5;
+  font-size: 90%;
+  text-align: center;
+}
+
+.table-wrapper > table tbody > tr {
+  transition: all 0.3s ease;
+}
+
+.table-wrapper > table tbody > tr:hover {
+  background-color: var(--mask);
+}
