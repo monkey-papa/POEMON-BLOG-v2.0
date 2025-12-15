@@ -102,7 +102,6 @@ const colorList = [
 const focus = ref(null);
 
 onMounted(() => {
-  getProhibitedWordsList();
   getTreeHole();
   focus.value?.focus();
 });

@@ -221,7 +221,6 @@ onMounted(() => {
   if (userList.value.length === 0) {
     getUsers();
   }
-  emit("getProhibitedWordsList", prohibitedWordsList.value);
 });
 
 const getUsers = async () => {

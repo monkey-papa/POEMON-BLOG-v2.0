@@ -239,7 +239,6 @@ const getArticles = async () => {
 
     .layout {
       display: flex;
-      max-width: 1300px;
 
       #tag {
         padding: 10px 35px;
